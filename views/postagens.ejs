@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postagens</title>
+</head>
+<body>
+  <h1>Postagens</h1>
+  <ul>
+    <% postagens.forEach(postagem => { %>
+      <li>
+        <strong><%= postagem.nome %></strong>
+        <p><%= postagem.conteudo %></p>
+        <p>Curtidas: <%= postagem.curtidas %></p>
+      </li>
+    <% }); %>
+  </ul>
+  <a href="/criar-postagem">Criar Postagem</a>
+</body>
+</html>
